@@ -6,6 +6,7 @@ use constants::BUFFER_SIZE;
 pub struct Socket {
     socket: UdpSocket,
 }
+
 impl Socket {
     pub fn new(port: u16) -> Self {
         Self {
