@@ -1,4 +1,4 @@
-use util::array_to_string;
+use util::array2string2;
 use local_ip;
 use std::net::{UdpSocket, SocketAddr};
 use constants::BUFFER_SIZE;
@@ -18,7 +18,7 @@ impl Socket {
         let mut buffer = [0; BUFFER_SIZE];
         
         match self.socket.recv_from(&mut buffer) {
-            Ok((_,source)) => Some((source,array_to_string(&buffer))),
+            Ok((amount,source)) => Some((source,array2string2(&buffer,amount))),
             Err(_) => None,
         }
     }

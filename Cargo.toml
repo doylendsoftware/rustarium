@@ -1,6 +1,6 @@
 [package]
 name = "rustarium"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["tdoylend <tmdoylend@gmail.com>"]
 description = "A tiny UDP message-passing framework."
 license = "MIT"
