@@ -6,4 +6,4 @@ description = "A tiny UDP message-passing framework."
 license = "MIT"
 
 [dependencies]
-local-ip="*"
+local-ip="0.1"
