@@ -3,6 +3,7 @@ name = "rustarium"
 version = "0.0.5"
 authors = ["tdoylend <tmdoylend@gmail.com>"]
 description = "A tiny UDP message-passing framework."
+license = "MIT"
 
 [dependencies]
 local-ip="*"
