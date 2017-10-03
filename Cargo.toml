@@ -6,6 +6,6 @@ description = "A tiny UDP message-passing framework."
 documentation = "https://doc.doylendsoftware.com/rustarium"
 repository = "https://www.github.com/doylendsoftware/rustarium"
 license = "MIT"
-
+travis-ci = { repository = "doylendsoftware/rustarium", branch = "master" }
 [dependencies]
 local-ip="0.1"
