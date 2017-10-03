@@ -3,10 +3,11 @@ use local_ip;
 use std::net::{UdpSocket, SocketAddr,ToSocketAddrs};
 use constants::BUFFER_SIZE;
 
+/**
+Wrapper around UdpSocket.
+*/
 pub struct Socket {
-    /*!
-    Wrapper around UdpSocket.
-    */
+
     socket: UdpSocket,
 }
 
