@@ -3,6 +3,8 @@ name = "rustarium"
 version = "0.1.1"
 authors = ["tdoylend <tmdoylend@gmail.com>"]
 description = "A tiny UDP message-passing framework."
+documentation = "doc.doylendsoftware.com/rustarium"
+repository = "github.com/doylendsoftware/rustarium"
 license = "MIT"
 
 [dependencies]
