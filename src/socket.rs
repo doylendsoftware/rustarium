@@ -1,6 +1,6 @@
 use util::array2string2;
 use local_ip;
-use std::net::{UdpSocket, SocketAddr};
+use std::net::{UdpSocket, SocketAddr,ToSocketAddrs};
 use constants::BUFFER_SIZE;
 
 pub struct Socket {
@@ -11,6 +11,12 @@ impl Socket {
     pub fn new(port: u16) -> Self {
         Self {
             socket: UdpSocket::bind((local_ip::get().unwrap(),port)).unwrap()
+        }
+    }
+    
+    pub fn new_any_ip<A: ToSocketAddrs>(addr: A) -> Self {
+        Self {
+            socket: UdpSocket::bind(addr).unwrap()
         }
     }
     
