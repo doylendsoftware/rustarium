@@ -1,8 +1,8 @@
 pub fn split_command(mut message: String) -> (String, String) {
     /*!
     Split a message into two parts: A command, and its parameters.
-    A single trailing space after the command is removed, if present.
     
+    A single trailing space after the command is removed, if present.
     Singleton commands will return an empty string "" for the parameters.
     */
     
