@@ -1,4 +1,4 @@
-pub fn split_message(mut message: String) -> (String, String) {
+pub fn split_command(mut message: String) -> (String, String) {
     /*!
     Split a message into two parts: A command, and its parameters.
     A single trailing space after the command is removed, if present.
